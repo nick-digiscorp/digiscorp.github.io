@@ -45,10 +45,16 @@ Primary Color: #1AFF00;
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500'); /* Raleway Font */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans'); /* Open Sans Font */
 @font-face {
-    font-family: 'Anurati';
-    src: url('../fonts/Anurati-Regular.otf');
-}
+    font-family: 'Montserrat-reg';
+    src: url('../fonts/Montserrat-Regular.otf');
 
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-SemiBold.otf');
+
+
+}
 /* --------------------------- /////////// I. GENERAL /////////// --------------------------- */
 /* -Color- */
 .colored {
@@ -57,7 +63,7 @@ Primary Color: #1AFF00;
 /* -Link Styling- */
 a {
     color: #7BA59D;
-    font-family: Raleway, sans-serif;
+    font-family: Montserrat-reg, sans-serif;
 	text-decoration: none;
 }
 a:visited {
@@ -94,11 +100,11 @@ html, body {
 }
 /* -Text Styling */
 h1,h2,h3,h4,h5,h6 {
-	font-family: Raleway, sans-serif;
+	font-family: Montserrat-Bold, sans-serif;
 }
 h1 {
     font-size: 2.25rem; /* 36px */
-    font-family: Anurati, sans-serif;
+    font-family: Montserrat-Bold, sans-serif;
     letter-spacing: 5px;
 } 
 h2 {
@@ -114,7 +120,7 @@ h4 {
     font-weight: 300;
 }
 p {
-    font-family: Open Sans, sans-serif;
+    font-family: Montserrat-reg, sans-serif;
     font-size: 0.9375rem; /* 15px */
     padding: 5px 5px 5px 0;
     margin: 0;
@@ -262,7 +268,7 @@ button {
     position: relative;
     color: #FFF;
     top: 43%;
-    font-family: Anurati, sans-serif;
+    font-family: Montserrat-Bold, sans-serif;
     letter-spacing: 5px;
 }
 #progress {
@@ -291,7 +297,7 @@ button {
 
 /* --------------------------- /////////// III. HEADER & NAVIGATION /////////// --------------------------- */
 #logo {
-    font-family: Anurati, sans-serif;
+    font-family: Montserrat-Bold, sans-serif;
     font-size: 1.75rem; /* 28px */;
     letter-spacing: 5px;
 }
