@@ -62,29 +62,29 @@ Primary Color: #1AFF00;
 }
 /* -Link Styling- */
 a {
-    color: #7BA59D;
+    color: #1AFF00;
     font-family: Montserrat-reg, sans-serif;
 	text-decoration: none;
 }
 a:visited {
-    color: #222;
+    color: #1AFF00;
     text-decoration: none;
 }
 a:hover {
-    color: #7BA59D;
+    color: #1AFF00;
 	text-decoration: underline;
 }
 a:active {
-    color: #7BA59D;
+    color: #1AFF00;
     text-decoration: underline;
 }
 a:focus {
-    color: #7BA59D;
+    color: #1AFF00;
     text-decoration: none;
 }
 /* -Resets- */
 html, body { 
-    background-color: #1A2121;
+    background-color: #4d392a;
     background: url(../images/bg.png);
     background-repeat: repeat;
     color: #FFF;
