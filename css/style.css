@@ -60,6 +60,7 @@ Primary Color: #1AFF00;
 .colored {
     color: #1AFF00;
 }
+
 /* -Link Styling- */
 a {
     color: #1AFF00;
@@ -84,7 +85,7 @@ a:focus {
 }
 /* -Resets- */
 html, body { 
-    background-color: #4d392a;
+    background-color: #1A2121;
     background: url(../images/bg.png);
     background-repeat: repeat;
     color: #FFF;
