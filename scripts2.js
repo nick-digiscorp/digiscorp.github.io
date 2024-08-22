@@ -31,13 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 image: 'src/About/Team/JerryV.jpg'
             }
         ],
-        'prod': [
-            {
-                name: 'Carlos C.',
-                role: 'Producer',
-                image: 'src/About/Team/CarlosC.JPG'
-            },
-        ],
         'development-team': [
             {
                 name: 'Hunter A.',
@@ -97,13 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 image: 'src/About/Team/Daniel_Woodell.png'
             },
         ],
-        'qa': [
-            {
-                name: 'Abraham E.',
-                role: 'Quality Assurance Lead',
-                image: 'src/About/Team/Abraham_Elfenbaum.png'
-            },
-        ],
+
         'audio': [
             {
                 name: 'Noah T.',
@@ -143,13 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 image: 'src/About/Team/Tiago_Rivera.png'
             },
         ],
-        'comm': [
-            {
-                name: 'Armando F.',
-                role: 'Community Manager',
-                image: 'src/About/Team/Armando_F.jpg'
-            },
-        ],
+
         '2d': [
             {
                 name: 'Tyler C.',
@@ -181,6 +162,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: '2D Artist',
                 image: 'src/About/Team/Eris.JPG'
             },
+            {
+                name: 'Ben Y.',
+                role: '2D Artist',
+                image: 'src/About/Team/beny.png'
+            },
         ],
         '3d': [
             {
@@ -204,19 +190,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 image: 'src/About/Team/JoeB.jpg'
             },
         ],
+        'support': [
+            {
+                name: 'Abraham E.',
+                role: 'Quality Assurance Lead',
+                image: 'src/About/Team/Abraham_Elfenbaum.png'
+            },
+            {
+                name: 'Armando F.',
+                role: 'Community Manager',
+                image: 'src/About/Team/Armando_F.jpg'
+            },
+            {
+                name: 'Carlos C.',
+                role: 'Producer',
+                image: 'src/About/Team/CarlosC.JPG'
+            },
+        ],
     };
 
     const teamNames = {
         'creative-leaders': 'Our Creative Leaders',
-        'prod': 'Production Team',
         'development-team': 'Development Team',
         'level-design-team': 'Level Design Team',
-        'qa': 'Quality Assurance',
         'audio': 'Audio Team',
         'narr': 'Narrative Team',
-        'comm': 'Community Team',
         '2d': '2D Art Team',
         '3d': '3D Art Team',
+        'support': 'Support Team',
     };
 
     function populateProfiles(team) {
