@@ -219,12 +219,11 @@ document.addEventListener('DOMContentLoaded', () => {
         '3d': '3D Art Team',
     };
 
-    function populateProfiles(team) {
-        profilesGrid.innerHTML = '';
+       function populateProfiles(team) {
+        profilesGrid.innerHTML = ''; // Clear existing profiles
         teams[team].forEach(member => {
             const profileCard = document.createElement('div');
             profileCard.classList.add('profile__card');
-            
             profileCard.innerHTML = `
                 <div class="profile__image">
                     <img src="${member.image}" alt="${member.name}">
@@ -232,39 +231,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h3>${member.name}</h3>
                 <p class="profile__role">${member.role}</p>
             `;
-
             profilesGrid.appendChild(profileCard);
         });
-
-        // Update the heading text
         heading.textContent = teamNames[team];
-
-        // Re-trigger the animation
-        heading.classList.remove('animate-heading');
-        void heading.offsetWidth; // Trigger reflow to reset the animation
-        heading.classList.add('animate-heading');
     }
 
-    teamDropdown.addEventListener('change', (e) => {
-        const selectedTeam = e.target.value;
+    teamDropdown.addEventListener('change', () => {
+        const selectedTeam = teamDropdown.value;
         populateProfiles(selectedTeam);
-        localStorage.setItem('selectedTeam', selectedTeam);
     });
 
-    // Initialize with the stored team or the default team
+    // Initialize the profiles with the default or stored team
     const savedTeam = localStorage.getItem('selectedTeam') || 'creative-leaders';
     teamDropdown.value = savedTeam;
     populateProfiles(savedTeam);
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    });
-    
 });
