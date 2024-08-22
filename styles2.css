@@ -1,0 +1,441 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.9); /* Slightly transparent background */
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar.scrolled {
+    background-color: rgba(51, 51, 51, 1); /* Solid background on scroll */
+    padding: 10px 20px; /* Reduce padding on scroll for compact look */
+}
+
+.navbar__logo img {
+    height: 50px; /* Adjusted logo size */
+    transition: height 0.3s ease;
+}
+
+.navbar.scrolled .navbar__logo img {
+    height: 40px; /* Slightly smaller logo on scroll */
+}
+
+.navbar__links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between the links */
+}
+
+.navbar__links li {
+    position: relative; /* For adding hover effects */
+}
+
+.navbar__links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Larger font size */
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar__links a:hover {
+    color: #e50914; /* Highlight color on hover */
+}
+
+/* Underline effect on hover */
+.navbar__links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #e50914;
+    transition: width 0.3s ease;
+}
+
+.navbar__links a:hover::after {
+    width: 100%; /* Full-width underline on hover */
+}
+
+/* Studio Introduction Section */
+.studio-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px 50px;
+}
+
+.intro__text {
+    width: 50%;
+}
+
+.intro__text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro__text p {
+    font-size: 32px;
+}
+
+.intro__image {
+    width: 50%;
+}
+
+.intro__image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.social__link {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Meet the Team Section */
+.meet-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.team__image {
+    width: 50%;
+}
+
+.team__image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team__text {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.team__text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.team__text p {
+    font-size: 32px;
+}
+
+/* Team Profiles Section */
+.team-profiles {
+    padding: 50px;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.team-profiles h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.team-select {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-heading {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.team-select label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.team-select select {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+/* Apply the fadeIn animation to the heading */
+.team-profiles h2 {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.profiles__grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.profile__card {
+    width: 180px;
+    text-align: center;
+    margin: 20px;
+}
+
+.profile__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile__card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.profile__role {
+    color: #777;
+    font-size: 16px;
+}
+
+/* Hiring Section */
+.hiring {
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-image: url('src/About/dsiHiring.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+    min-height: 80vh; /* Maintain the height */
+    z-index: 1; /* Ensure it appears on top of other elements */
+}
+
+/* Dark overlay to make the background darker */
+.hiring::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for better text readability */
+    z-index: 1; /* Ensure the overlay is behind the content */
+}
+
+/* Ensure text and video are above the overlay */
+.hiring__text, .hiring__video {
+    position: relative;
+    z-index: 2; /* Position content above overlay */
+    color: white; /* Ensure text is white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Reduced shadow for better readability */
+}
+
+.hiring__text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hiring__text p {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Updated Hiring Section Video Styles */
+.hiring__video {
+    width: 40%; /* Slightly smaller to better align with the text */
+    position: absolute;
+    bottom: 42; /* Adjusted for better vertical alignment */
+    right: 10%; /* Increased the right margin to bring it closer to the text */
+    z-index: 2;
+}
+
+.hiring__video video {
+    width: 100%; /* Fill the container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+
+
+.modal__buttons {
+    margin-top: 20px;
+}
+
+.modal__buttons .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.modal__buttons .btn:hover {
+    background-color: #f6121d;
+    transform: scale(1.05);
+}
+
+.modal__buttons .btn:active {
+    transform: scale(0.95);
+}
+
+.hiring__text .btn {
+    margin-top: 20px;
+}
+
+/* Make sure the text doesn't collide with the image */
+.hiring__text {
+    width: 35%; /* Adjusted to give more space to the video */
+    padding-right: 30px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer__links li {
+    margin: 5px 15px;
+}
+
+.footer__links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar__links li {
+        width: 100%;
+    }
+
+    .navbar__links a {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .hiring__video {
+        width: 50%; /* Adjust video width for smaller screens */
+        bottom: 5%; /* Adjust position */
+        right: 5%; /* Adjust position */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro__text h1 {
+        font-size: 24px;
+    }
+
+    .intro__text p {
+        font-size: 14px;
+    }
+
+    .team__text h2 {
+        font-size: 24px;
+    }
+
+    .team__text p {
+        font-size: 14px;
+    }
+
+    .hiring__text h2 {
+        font-size: 24px;
+    }
+
+    .hiring__text p {
+        font-size: 14px;
+    }
+
+    .profile__card h3 {
+        font-size: 16px;
+    }
+
+    .profile__role {
+        font-size: 12px;
+    }
+
+    .profile__card {
+        width: 140px;
+    }
+
+    .hiring__video {
+        width: 80%; /* Further adjust video width for smallest screens */
+        bottom: 5%; /* Adjust position */
+        right: 10%; /* Adjust position */
+    }
+}

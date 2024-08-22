@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- META TAGS -->
     <meta charset="utf-8">
     <meta name="author" content="Digital Scorpion Interactive">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
@@ -31,736 +30,209 @@
     <meta property="og:image" content="" /><!-- Image link (jpg only)-->
     <meta property="og:url" content="" /> <!--where do you want your post to link to-->
     <meta property="og:type" content="article" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/favicon" href="src/favicon.jpg"/>
+    <title>Digital Scorpion Interactive</title>
+    
+    <!-- External CSS for font and icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Favicon and Apple Icons -->
-    <link rel="icon" type="image/favicon" href="images/favicon/favicon.jpg"/>
-
-    <!-- STYLES -->
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- Animations -->
-    <link href="css/animations.css" rel="stylesheet">
-    <!-- Lightbox -->
-    <link href="css/lightbox.min.css" rel="stylesheet">
-    <!-- Video Lightbox -->
-    <link href="css/modal-video.min.css" rel="stylesheet">
-    <!-- Main Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-  
+    <!-- Internal CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loader-wrapper">
-        <h1 class="loader-logo"><span class="colored"> D</span>IGITAL<span class="colored"> S</span>CORPION<span class="colored"> I</span>NTERACTIVE</h1>
-        <div id="progress"></div>
-        <h3 class="loader-text">LOADING</h3>
-    </div>
-    
-    <!-- //// HEADER //// -->
-    <header id="main-header">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-            <div class="container">
-                <!-- Site Logo -->
-                <a id="logo" class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt="site logo"></a>
-                <!-- Dropdown Button -->
-                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                </button>
-                <!-- Navigation Links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#games">Games</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#careers">Careers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://blog.digitalscorpioninteractive.com">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://digitalscorpioninteractive.threadless.com/">Merch</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://discord.gg/jtVEun2wSU">Discord</a>
-                        </li>
-                    </ul>
+
+    <div id="app">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <div class="navbar__logo">
+                    <a href="index.html">
+                        <img src="src/white-dsi-logo.png" alt="Digital Scorpion Interactive" />
+                    </a>
                 </div>
+                <ul class="navbar__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </nav>
-    </header><!-- Header End -->
-    
-    <!-- /// HERO SECTION /// -->
-    <div id="hero-section" class="medium-margin">
-        <div class="row hero-unit">
-            <div class="container">
-                <div class="hero-caption"><!-- Main Tagline -->
-                </div>
-            </div>
-        </div>
-    </div><!-- Hero Section End -->
-    
-    <!-- /// Main Container /// -->
-    <div class="container">
-        <!-- /// ABOUT SECTION /// -->
-        <div id="about" class="large-margin">
-            <a href="about"></a><!-- Nav Anchor -->
-            <div class="row heading tiny-margin">
-                <div class="col-md-auto">
-                    <h1 class="animation-element slide-down">ABOUT <span class="colored">US</span></h1>
-                </div>
-                <div class="col">
-                    <hr class="animation-element extend">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="small-margin"> We are Digital Scorpion Interactive, an Indie Game Development Studio founded in 2021 by Nick Revell. His vision is to change how games are built and prove to the gaming world that we are a positive force for our industry while making great games. DSI was founded on the principles of <span class="colored">Ingenuity</span>,<span class="colored"> Integrity</span>, and <span class="colored"> Innovation</span>. We strive to break the boundaries of modern gaming and bring to life an immersive experience that gamers will buzz about and thoroughly enjoy the journey. </p>
-                    <!--<p>DSI is currently developing its premier game <span class="colored">Tales of Valoris: Swallow's Defenders</span>, a Tower Defense. It currently does not have a set release date, but keep checking back for more updates!</p>-->
-                </div>
-                <div class="col-md-6">
-                    <!--<img id="support-image" src="images/placeholder.jpg" data-src="images/about.png" class="img-fluid b-lazy" alt="digital collage"> -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NU57ytmSqgQ?si=kh2WSmFh6lJm1WnV" title="YouTube video player"  frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <!-- /// GAMES SECTION /// -->
-        <div id="games" class="large-margin">
-            <a href="games"></a><!-- Nav Anchor -->
-            <div class="row heading tiny-margin">
-                <div class="col-md-auto">
-                    <h1 class="animation-element slide-down">OUR <span class="colored">GAMES</span></h1>
-                </div>
-                <div class="col">
-                    <hr class="animation-element extend">
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col-md-11 small-margin">
-                   <p>Here at DSI we pride ourselves in delivering rich and polished experiences that our fanbase can enjoy and immerse themselve into. We have one game currently in development with two more projects in the pipeline.</p>
-                </div>
-                <div class="col-md-12">
-                    <ul class="game-tags">
-                        <li>Sort By Tag :</li>
-                        <li><a href="#" data-filter=".new">NEW</a></li>
-                        <li><a href="#" data-filter="*">ALL</a></li>
-                        <li><a href="#" data-filter=".pc">PC</a></li>
-                        <li><a href="#" data-filter=".mobile">MOBILE</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="games-portfolio ">
-                <!-- Game Card Video -->
-                <div class="row game-card pc new">
-                    <div class="col-lg-12 col-xl-5 game-card-left">
-                            <img src="images/placeholder.jpg" data-src="images/HnB.png" class="img-fluid b-lazy" alt="image thumbnail"> <!-- Video Thumbnail Img -->
-                        </a>
-                    </div>
-                    <div class="col-lg-12 col-xl-7 game-card-right">
-                        <h2 class="short-hr-left">HIT N' BIT - <span class="colored">IN DEVELOPMENT</span></h2>
-                        <p class="tags"><span class="subtle">Metroidvania | PC</span> </p>
-                        <p class="game-description">Players will experience the story of Hit N’ Bit through the sibling pair, Hitendra and Thybit. As Hitendra, the determined warrior princess, players will search all over Illumnia for her missing brother. Wielding a mighty sword and a heart for battle, she’ll let nothing stop her in her quest. <br> As Thybit, a master of the arcane arts, players will find themselves exploring the unknown realm of Tenebrye. Determined as ever, Thybit will track down the mysterious mage who brought him to the realm of darkness and stole his legendary staff of balance. <span class="expand colored strong" data-toggle="modal" data-target="#game1">Read More</span></p>
-                    </div>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade game-modal" id="game1" tabindex="-1" role="dialog" aria-labelledby="scales" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title" id="scales">HIT N' BIT</h1>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                               <div class="modal-body">
-                                   <h2 class="short-hr-left">TRAVEL TO NEW LANDS</h2>
-                                   <p>Hit N' Bit takes place in the world of <span class="colored">Valoris</span>. A magical land, ruled by Old Gods and New. You will travel to new lands throughout the game, exploring the history and magic of the realms.</p>
-                                   <iframe display="block" width="560" height="315" src="https://www.youtube.com/embed/MPJBy_yiy1w?si=URw_XD0SGuqFc1rQ" title="YouTube video player"  frameborder="0" allowfullscreen></iframe>
-                                   <br>
-                                   <h2 class="short-hr-left">WELCOME TO CERULIS</h2>
-                                   <p><span class="colored">Ceruils</span> is the shining jewel in the sky. A beacon of all things good in the Realm of Illumnia. This is where the story begins with Hit N' Bit. Magic is strong, and the people are nice here.</p>
-                                   <img class="img-fluid" src="images/Cerulis.png" alt="screenshot">
-                                   <br>
-                                   <h2 class="short-hr-left">ENTER MURWELL</h2>
-                                   <p>The darker half of Valoris, <span class="colored">Murwell</span> the Sinking City of Tenebrye. You will explore the deep dark magic while attempting to escape its grasp on you. Will you get out alive?</p><img class="img-fluid" src="images/Murwell.png" alt="screenshot">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="button secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                </div><!-- Game Card End -->
-                 <!-- Game Card Video -->
-                 <div class="row game-card mobile new">
-                     <div class="col-lg-12 col-xl-5 game-card-left">
-                             <img src="images/placeholder.jpg" data-src="images/TOV.png" class="img-fluid b-lazy" alt="image thumbnail"> <!-- Video Thumbnail Img -->
-                         </a>
-                     </div>
-                     <div class="col-lg-12 col-xl-7 game-card-right">
-                         <h2 class="short-hr-left">TALES OF VALORIS: SWALLOW'S DEFENDERS <br/>- <span class="colored">RELEASED</span></h2>
-                         <p class="tags"><span class="subtle">Tower Defense | Mobile </span> </p>
-                         <p class="game-description">Prepare to defend Swallows Keep as mobs of thieves, bandits, and monsters threaten the citizens of our grand city. Players will command a variety of defenders to halt these evildoers in their tracks. Use your arsenal of skilled fighters and mages to creatively defeat your foes and stop the heinous plans of the coalition of mysterious bandit commanders. <a class="expand colored strong " href="TOV.html">Read More</a></p>
-                     </div>
-                     
-                     <!-- Modal -->
-                     <div class="modal fade game-modal" id="game2" tabindex="-1" role="dialog" aria-labelledby="scales" aria-hidden="true">
-                         <div class="modal-dialog modal-lg" role="document">
-                             <div class="modal-content">
-                                 <div class="modal-header">
-                                     <h1 class="modal-title" id="scales">TALES OF VALORIS</h1>
-                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                         <span aria-hidden="true">&times;</span>
-                                     </button>
-                                 </div>
-                                <div class="modal-body">
-                                    <h2 class="short-hr-left">A BLAST TO THE PAST</h2>
-                                    <p>Set 50 years in the past within the Hit N’ Bit universe, you will experience a story of victory and loss as you follow along the tale of <span class="colored">Halvesh</span> and his band of heroes, who aim to keep their home safe from invaders.</p>
-                                    <!-- TRAILER GOES HERE <iframe display="block" width="560" height="315" src="https://www.youtube.com/embed/MPJBy_yiy1w?si=URw_XD0SGuqFc1rQ" title="YouTube video player"  frameborder="0" allowfullscreen></iframe> -->
-                                    <img class="img-fluid" src="images/MagicGrid.GIF" alt="screenshot">
-                                    <br>
-                                    <h2 class="short-hr-left">A SERIES OF FUN AND CHALLENGING LEVELS</h2>
-                                    <p>Conquer 20 levels that will take you through the land of <span class="colored">Swallows Keep</span> and the surrounding area. Experience the lush landscapes as you trek through dangerous territory to stop the onslaught of enemies in your path.</p>
-                                    <img class="img-fluid" src="images/S1.png" alt="screenshot">
-                                    <br>
-                                    <h2 class="short-hr-left">COMMAND A DIVERSE CAST OF TROOPS</h2>
-                                    <p>As a <span class="colored">commander</span> of Swallows Keep, you will have the ability to command five defender types at a time to creatively defeat the thieves and bandits in your way. Earn 6+ different types of Defenders on your journey throughout Valoris and become stronger in your fight against your foes.</p>
-                                    <img class="img-fluid" src="S2.png" alt="screenshot">
-                                 </div>
-                                 <div class="modal-footer">
-                                     <button type="button" class="button secondary" data-dismiss="modal">Close</button>
-                                 </div>
-                             </div>
-                         </div>
-                      </div>
-                 </div><!-- Game Card End -->
-            </div>
-        </div>
-        <!-- /// TEAM SECTION /// -->
-        <div id="team" class="large-margin">
-            <a href="team"></a><!-- Nav Anchor -->
-            <div class="row heading tiny-margin">
-                <div class="col-md-auto">
-                    <h1 class="animation-element slide-down">THE <span class="colored">TEAM</span></h1>
-                </div>
-                <div class="col">
-                    <hr class="animation-element extend">
-                </div>
-            </div>
-            <div class="row medium-margin">
-                <div class="col-md-11 tiny-margin">
-                    <p>Meet our wonderful team of talented individuals. Each member is vital to the creativity and follow through of making great games.</p>
-                </div>
-                
-                <!--------------------------------------------------------------------------------------------------------------------->
-                
-                
-                <div><h3 class="animation-element slide-down">THE <span class="colored">EXECUTIVES</span></h3></div>
-                
-                <div id="full-row" class="row text-center">
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/NickR.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Nick R.</p>
-                        <p class="subtle">Co-Founder | Chief Executive Officer</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/NickM.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Nick M.</p>
-                        <p class="subtle">Co-Founder | Chief Design Officer</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/JoelM.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Joel M.</p>
-                        <p class="subtle">Co-Founder | Chief Technical Officer</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/MikeS.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Mike S.</p>
-                        <p class="subtle">Co-Founder | Chief Creative Officer</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/JerryV.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Jerry V.</p>
-                        <p class="subtle">Co-founder | Chief Production Officer</p>
-                    </div>
-                </div>
 
-                 <!-----------------------------------PRODUCERS---------------------------------------------------------------------------------->
-                <div><h3 class="animation-element slide-down">THE <span class="colored">PRODUCERS</span></h3></div>
-               
-                <div id="full-row" class="row text-center">
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/carlosc.JPG" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Carlos C.</p>
-                        <p class="subtle">Producer</p>
+        <!-- Carousel Section -->
+        <section id="home" class="carousel">
+            <!-- Left Arrow -->
+            <div class="carousel__arrow carousel__arrow--left">&#10094;</div>
+        
+            <!-- Slide 1 -->
+            <div class="carouselSlide slide1 active">
+                <div class="hero__content">
+                    <h1>Explore New Worlds</h1>
+                    <p>Discover Hit N' Bit, the latest game from Digital Scorpion Interactive and immerse yourself in new adventures.</p>
+                    <div class="hero__buttons">
+                        <a href="https://www.youtube.com/watch?v=0eWROkKa3Oo" class="hero__btn">View Trailer</a>
+                        <a href="https://store.steampowered.com/app/2366690/Hit_N_Bit/" class="hero__btn">Wishlist Now</a>
                     </div>
                 </div>
-                <!-----------------------------------------------------DEVELOPMENT--------------------------------------------------------->
-                <div><h3 class="animation-element slide-down">THE <span class="colored">DEVELOPMENT TEAM</span></h3></div>
-                
-                <div id="full-row" class="row text-center">
-                    
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Hunter_Adelgren.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Hunter A.</p>
-                        <p class="subtle">Lead Developer | Unity Developer</p>
-                    </div><div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Bryce_Knott.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Bryce K.</p>
-                        <p class="subtle">Unity Developer | Learning Instructor</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/AlexB.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Alex B.</p>
-                        <p class="subtle">Unity Developer</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Ellie_M.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Ellie M.</p>
-                        <p class="subtle">Unity Developer</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Clara_N.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Clara N.</p>
-                        <p class="subtle">Unity Developer</p>
+            </div>
+        
+            <!-- Slide 2 -->
+            <div class="carouselSlide slide2">
+                <div class="hero__content">
+                    <h1>Adventure Awaits</h1>
+                    <p>In Tales of Valoris, defend your land, and prepare to battle foes a plenty.</p>
+                    <div class="hero__buttons">
+                        <a href="https://www.youtube.com/watch?v=6W-9RC2pU3E" class="hero__btn">View Trailer</a>
+                        <a href="https://store.steampowered.com/app/3059570/Tales_of_Valoris_Swallows_Defenders/" class="hero__btn">Wishlist Now</a>
                     </div>
                 </div>
-                
-                <!----------------------------------------------------LEVEL DESIGN-------------------------------------------------------------->
-                
-                <div><h3 class="animation-element slide-down">THE <span class="colored">LEVEL DESIGN TEAM</span></h3></div>
-                
-                <div id="full-row" class="row text-center">
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Daniel_Kitchen.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Daniel K.</p>
-                        <p class="subtle">Level Design Lead</p>
-                    </div><div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Daniel_Woodell.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Daniel W.</p>
-                        <p class="subtle">Level Designer</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/MikeM.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Mike M.</p>
-                        <p class="subtle">Level Designer</p>   
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/DanielC.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Daniel C.</p>
-                        <p class="subtle">Level Designer</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/GlenC.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Glen C.</p>
-                        <p class="subtle">Level Designer</p>
+            </div>
+        
+            <!-- Slide 3 -->
+            <div class="carouselSlide slide3">
+                <div class="hero__content">
+                    <h1>Join our Community</h1>
+                    <p>Be a part of something bigger!</p>
+                    <div class="hero__buttons">
+                        <a href="https://discord.gg/jtVEun2wSU" class="hero__btn">Join our Discord</a>
                     </div>
                 </div>
-                
-                <!--------------------------------------------------2D ART-------------------------------------------------------->
-                
-                <div class="row"><h3 class="animation-element slide-down">THE <span class="colored">2D ART TEAM</span></h3></div>
-                
-                <div id="full-row" class="row text-center">
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/TylerC.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Tyler C.</p>
-                        <p class="subtle">2D Art Lead</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Dani_Fields.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Dani F.</p>
-                        <p class="subtle">2D Artist</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Flipsy_Lucero.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Flipsy T.</p>
-                        <p class="subtle">2D Artist</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Tessa_L.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Tessa L.</p>
-                        <p class="subtle">2D Artist</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Ashley_W.JPG" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Ashley W.</p>
-                        <p class="subtle">2D Artist</p>
-                    </div>
-                </div>
-                <!--------------------------------------------------3D ART-------------------------------------------------------->
-                <div class="row"><h3 class="animation-element slide-down">THE <span class="colored">3D ART TEAM</span></h3></div>
-                <div id="full-row" class="row text-center">
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Taylor_Benoit.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Taylor B.</p>
-                        <p class="subtle">3D Art Lead</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Megan_Foy.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Megan F.</p>
-                        <p class="subtle">3D Artist</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/frannie.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Frannie M.</p>
-                        <p class="subtle">3D Artist</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/JoeB.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Joe B.</p>
-                        <p class="subtle">3D Artist</p>
-                    </div> 
-                </div>
+            </div>
+        
+            <!-- Right Arrow -->
+            <div class="carousel__arrow carousel__arrow--right">&#10095;</div>
+        </section>
+        
 
-                
-                <!-------------------------------------------------NARRATIVE------------------------------------------------------------------------------------->
-                
-                <div><h3 class="animation-element slide-down">THE <span class="colored">NARRATIVE TEAM</span></h3></div>
-                
-                <div id="full-row" class="row text-center">
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/John_BlackIV.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">John B. IV</p>
-                        <p class="subtle">Lead Narrative Designer</p>
-                    </div> 
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Aidan_Wong.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Aidan W.</p>
-                        <p class="subtle">Narrative Designer</p>
-                    </div>
-                  <!----- <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Benny_Uhlich.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Benny U.</p>
-                        <p class="subtle">Narrative Designer | Learning Instructor</p>
-                    </div> -->
-                   <!-- <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Dominic_Tramontana.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Dominic T.</p>
-                        <p class="subtle">Narrative Designer | Learning Instructor</p>
-                    </div> -->
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Dominic_Zullo.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Dominic Z.</p>
-                        <p class="subtle">Narrative Designer</p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Tiago_Rivera.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Tiago V.</p>
-                        <p class="subtle">Narrative Designer</p>
-                    </div> 
+        <!-- Games Showcase Section -->
+        <section id="games" class="games">
+            <h2>Our Games</h2>
+            <div class="games__grid">
+                <!-- Game Card 1 -->
+                <div class="game__card" data-modal="modal1">
+                    <img src="src/Index/hnb_600_900.jpg" alt="Game 1">
                 </div>
-                
-                <!-----------------------------------------------------AUDIO------------------------------------------------------------------->
-                
-                <div><h3 class="animation-element slide-down">THE <span class="colored">AUDIO TEAM</span></h3></div>
-                
-                <div id="full-row" class="row text-center">
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/NoahT.JPG" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Noah T.</p>
-                        <p class="subtle">Audio Lead </p>
-                    </div>
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/TravisM.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Travis M.</p>
-                        <p class="subtle">Techinical Sound Designer </p>
-                    </div>
-                    <!--<div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Nicholas_Christensen.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Nicholas C.</p>
-                        <p class="subtle">Technical Sound Lead</p>
-                    </div> -->
-                <!--    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Adam_Brown.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Adam B.</p>
-                        <p class="subtle">Music Designer</p>
-                    </div> -->
-                   <!-- <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Michael_Spicer.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Michael S.</p>
-                        <p class="subtle">Music Designer | Learning Instructor</p>
-                    </div>-->
-                        <div class="col-md-3 team-card">
-                            <figure>
-                                <img src="images/placeholder.jpg" data-src="images/AlexisT.jpg" class="img-fluid b-lazy" alt="teammember">
-                            </figure>
-                            <p class="team-name">Alexis T.</p>
-                            <p class="subtle">Sound Designer</p>
-                        </div>
-                     <!--    <div class="col-md-3 team-card">
-                            <figure>
-                                <img src="images/placeholder.jpg" data-src="images/Michael_Spicer.png" class="img-fluid b-lazy" alt="teammember">
-                            </figure>
-                            <p class="team-name">Kevin E.</p>
-                            <p class="subtle">Technical Sound Designer</p>
-                        </div> -->
-                    
+                <!-- Game Card 2 -->
+                <div class="game__card" data-modal="modal2">
+                    <img src="src/Index/ToV_600x900.jpg" alt="Game 2">
                 </div>
-                
-                <!--------------------------------------------------------MARKETING----------------------------------------------------------------------->
-                
-                <div><h3 class="animation-element slide-down">THE <span class="colored">MARKETING TEAM</span></h3></div>
-                <div id="full-row" class="row text-center align-center">
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Conor_R.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Conor R.</p>
-                        <p class="subtle">Community Manager</p>
-                    </div> 
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Armando_F.jpg" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Armando F.</p>
-                        <p class="subtle">Community Manager</p>
-                    </div> 
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Eris.JPG" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Eris G.</p>
-                        <p class="subtle">Content Artist | Marketing</p>
-                    </div> 
-                    <!-- <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Tia.JPG" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Tia L.</p>
-                        <p class="subtle">Dedicated Streamer | Marketing</p>
-                    </div> -->
+                <!-- Game Card 3 -->
+                <div class="game__card" data-modal="modal3">
+                    <img src="src/Index/Coming Soon.png" alt="Game 3">
                 </div>
-                
-                <!-----------------------------------------------------------QA---------------------------------------------------------------------->
-                
-              <div><h3 class="animation-element slide-down">THE <span class="colored">QUALITY ASSURANCE TEAM</span></h3></div>
-                <div id="full-row" class="row text-center">
-                    <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Abraham_Elfenbaum.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Abraham E.</p>
-                        <p class="subtle">Quality Assurance Lead | QA</p>
-                    </div>
-               <!--       <div class="col-md-3 team-card">
-                        <figure>
-                            <img src="images/placeholder.jpg" data-src="images/Kevin_Cochran.png" class="img-fluid b-lazy" alt="teammember">
-                        </figure>
-                        <p class="team-name">Kevin C.</p>
-                        <p class="subtle">Quality Assurance Lead | QA</p>-->
+            </div>
+        </section>
 
-                    </div> 
-                </div>
-               <!----------------------------------------------ADVISORY-------------------------------------------------------------->
-               <div><h3 class="animation-element slide-down">THE <span class="colored">ADVISORS</span></h3></div>
-               <div id="full-row" class="row text-center">
-               <div class="col-md-3 team-card">
-                   <figure>
-                       <img src="images/placeholder.jpg" data-src="images/JakeM.png" class="img-fluid b-lazy" alt="teammember">
-                   </figure>
-                   <p class="team-name">Jake M.</p>
-                   <p class="subtle">Business Developer | Advisor</p>
-               </div>
-               </div>
+        <!-- Community Section -->
+        <section id="community" class="community">
+            <h2>Join Our Community</h2>
+            <p>Stay connected with other gamers and developers.</p>
+            <div class="community__social">
+                <a href="https://www.facebook.com/profile.php?id=61556479769343" class="social__link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/digi_scorp" class="social__link" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/digital_scorpion_interactive/" class="social__link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@digitalscorpioninteractive8655" class="social__link" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://discord.gg/jtVEun2wSU" class="social__link" target="_blank"><i class="fab fa-discord"></i></a>
             </div>
-        </div>
-        <!-- /// CAREERS SECTION /// -->
-        <div id="careers" class='large-margin'>
-            <a href="careers"></a><!-- Nav Anchor -->
-            <div class="row heading tiny-margin">
-                <div class="col-md-auto">
-                    <h1 class="animation-element slide-down">WE'RE <span class="colored">HIRING</span></h1>
-                </div>
-                <div class="col">
-                    <hr class="animation-element extend">
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="short-hr-center">JOB OPENINGS</h2>
-                    <p>Are you a talented and motivated individual? Then we would love to have you in our team. We try to keep our job postings up to date, keep checking back here for new openings! All job postings are currently <span class="colored">Internships</span>. Paid postitions will be available in the future.</p><br>
-                    <button class="button"><a style="color: #FFF;" href="https://digital-scorpion-interactive.breezy.hr/">View Current Openings</a></button>
-                </div>
-            </div>
-        </div>
-            <div id="community" class="large-margin">
-                <div class="row heading tiny-margin">
-                    <div class="col-md-auto">
-                        <h1 class="animation-element slide-down">OUR <span class="colored">COMMUNITY</span></h1>
-                    </div>
-                    <div class="col">
-                        <hr class="animation-element extend">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="short-hr-center">JOIN OUR DISCORD</h2>
-                    <p>Stay up to date with the team and our game by joining our Discord Server!</p>
-                    <button class="button"><a style="color: #FFF;" href="https://discord.gg/jtVEun2wSU">Join Here</a></button>
-                </div>
-            </div>
-        </div>
-        <!-- /// CONTACT SECTION /// -->
-        <div id="contact" class="large-margin">
-            <a href="contact"></a><!-- Nav Anchor -->
-            <div class="row heading tiny-margin">
-                <div class="col-md-auto">
-                    <h1 class="animation-element slide-down">GET IN <span class="colored">TOUCH</span></h1>
-                </div>
-                <div class="col">
-                    <hr class="animation-element extend">
-                </div>
-            </div>
-            <div class="">
-                <div class="row small-margin">
-                    <div class="col-md-11">
-                        <p>If you have an idea you would like to pitch to us, or just want to learn more about what we do, please reach out to us!</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="short-hr-left">LEAVE US A MESSAGE</h2>
-                            <ul>
-                                <li><i class="fa fa-envelope"></i><p>Email: <span class="colored"><a href="mailto:digitalscorpioninteractive@gmail.com">digitalscorpioninteractive@gmail.com</a></span></p></li>
-                                <li><i class="fa fa-map-marker"></i><p>Address: <span class="colored">672 Old Mill Rd #349, Millersville MD 21108</span></p></li>
-                            </ul>
-                        </div>
-                        <!-- Google Map -->
-                        <div id="map-canvas"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- Main Container End -->
-    <!-- /// FOOTER /// -->
-    <footer id="main-footer">
-        <div id="footer"> 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p id="copyright">&copy; Digital Scorpion Interactive <span id="year"> </span></p><!-- Copyright Text -->
-                        <ul class="social-links"> <!-- Social Media Icons -->
-                            <li><a href="https://www.facebook.com/gaming/digitalscorpioninteractive"><i class="fa fa-facebook fa-lg icon-social"></i></a></li>
-                            <li><a href="https://twitter.com/digi_scorp"><i class="fa fa-twitter  fa-lg icon-social"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/digi-scorp"><i class="fa fa-linkedin fa-lg icon-social"></i></a>
-                            <li><a href="https://www.instagram.com/digital_scorpion_interactive/"><i class="fa fa-instagram fa-lg icon-social"></i></a>
-                            <li><a href="https://forms.gle/kf9PEoFEKgMTL2BS9">Submit a Bug</a></li>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- Container End -->
-        </div>
-    </footer><!-- Footer End -->
-    
-    <!-- //// SCRIPTS //// -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/blazy.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/jquery-modal-video.min.js"></script>
-    <script src="js/validator.min.js"></script>
-    <script src="js/strider.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB64kJJiSynOc9ZqkNMOyl94cvsw5Z2uno"></script>
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T2NWCL3P8C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            <a href="https://discord.gg/jtVEun2wSU" class="community__cta">Join Our Discord</a>
+        </section>
 
-  gtag('config', 'G-T2NWCL3P8C');
-</script>
+        <!-- Modal Overlay -->
+        <div class="modal-overlay"></div>
+
+        <!-- Modal for Game 1 -->
+        <div id="modal1" class="modal">
+            <div class="modal__content">
+                <span class="modal__close">&times;</span>
+                <video class="modal__video" muted>
+                    <source src="src/Videos/hnbtrailer1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="modal__gradient"></div>
+                <div class="modal__details">
+                    <h3>Hit N' Bit</h3>
+                    <p>Hit N’ Bit is a dark fantasy Metroidvania platformer. Embark on two wildy different journeys where you will fight monsters, explore a story-rich world, and encounter challenging puzzles. Do you have what it takes to defeat evil and change your destiny?</p>
+                    <div class="modal__buttons">
+                        <a href="https://store.steampowered.com/app/2366690/Hit_N_Bit/" class="btn">Wishlist Now</a>
+                        <a href="https://store.steampowered.com/app/2997590/Hit_N_Bit_Demo/" class="btn">Play the Demo</a>
+                        <a href="https://discord.gg/jtVEun2wSU" class="btn">Join Our Discord</a>
+                    </div>
+                    <br/>
+                    <h3>About Hit N' Bit</h3>
+                    <p>Hit N’ Bit is a 2.5D action-adventure metroidvania game that also holds a narratively-rich world. As Hitendra, you’ll encounter a plethora of non-player characters each with their own unique personalities. Talking to these people, even for a brief moment, will reveal insight about the world of Valoris. Hitendra uses this knowledge and her athletic ability to reach new locations to explore hidden areas and complete quests. Fight back those who threaten Hitendra and her city’s safety with her marital prowess.</p>
+                    <br/>
+                    <h3>The Story of Cerulis</h3>
+                    <p>The land of Valoris is one filled with magic and danger. Cerulis is the shining capital in the sky where many people call home. In this adventure you play as Hitendra, a warrior princess, as she prepares to set out on a journey to find her missing brother, Thybit. Explore the Cerulis Town Square in search of clues as well as gather the tools and supplies to make the journey as safe as possible. During your time preparing for adventure, you’ll also be assisting citizens and addressing their troubles. Dastardly figures and monsters run amok in the town square and it’s up to Hitendra’s amazing skills to bring back peace and justice to her home! </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Game 2 -->
+        <div id="modal2" class="modal">
+            <div class="modal__content">
+                <span class="modal__close">&times;</span>
+                <video class="modal__video" muted>
+                    <source src="src/Videos/tovtrailer1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="modal__gradient"></div>
+                <div class="modal__details">
+                    <h3>Tales of Valoris: Swallow's Defenders</h3>
+                    <p>Swallow’s Keep is a place of great prosperity; however, not all lands share in its wealth, and it has caught the eye of ambitious adversaries. Can you defend your home against the bandits? </p>
+                    <div class="modal__buttons">
+                        <a href="https://store.steampowered.com/app/3059570/Tales_of_Valoris_Swallows_Defenders/" class="btn">Wishlist Now</a>
+                        <a href="https://discord.gg/jtVEun2wSU" class="btn">Join Our Discord</a>
+                    </div>
+                    <br/>
+                    <h3>40 High Stakes Levels</h3>
+                    <p>Many people across Illumnia require the aid of Swallow’s Keep. Survive this Tale of Valoris by completing 20 captivating levels across 4 chapters. The story begins with you defending your home from a bandit siege. After successfully protecting their home, players will have the opportunity to travel across the land to places such as the Oreliana Ruins to stop those that threaten their livelihood.</p>
+                    <br/>
+                    <h3>Command a Powerful Legion</h3>
+                    <p>The Green Prince’s army has a variety of ways to defend itself: unique human troops like the powerful Crossbow Women destroy enemies from afar and combat items like the Bear Trap shut down close-range attackers.</p>
+                    <br/>
+                    <h3>Perilous Opponents</h3>
+                    <p>From vaulting thieves to mad poets, many types of bandits seek the fortune of Swallow’s Keep. Be wary of the various enemies throughout each chapter, as each comes with its own boss you must overcome.</p>
+                    <br/>
+                    <h3>Strategy Wins the Day</h3>
+                    <p>Though the riches of Swallow’s Keep are vast, they are not endless. Be mindful of how you manage your resources and soldiers; an unprepared General is a fallen one. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Game 3 
+        <div id="modal3" class="modal">
+            <div class="modal__content">
+                <span class="modal__close">&times;</span>
+                <iframe class="modal__video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <div class="modal__gradient"></div>
+                <div class="modal__details">
+                    <h3>Game Title 3</h3>
+                    <p>A dark and gripping tale of survival and intrigue.</p>
+                    <div class="modal__buttons">
+                        <a href="#" class="btn">Wishlist Now</a>
+                        <a href="#" class="btn">Join Our Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <p>&copy; 2024 Digital Scorpion Interactive. All Rights Reserved.</p>
+                <ul class="footer__links">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="https://forms.gle/kf9PEoFEKgMTL2BS9">Submit a Bug</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Internal JavaScript Link -->
+    <script src="scripts.js"></script>
+
 </body>
 </html>

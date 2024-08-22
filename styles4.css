@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.9); /* Slightly transparent background */
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar.scrolled {
+    background-color: rgba(51, 51, 51, 1); /* Solid background on scroll */
+    padding: 10px 20px; /* Reduce padding on scroll for compact look */
+}
+
+.navbar__logo img {
+    height: 50px; /* Adjusted logo size */
+    transition: height 0.3s ease;
+}
+
+.navbar.scrolled .navbar__logo img {
+    height: 40px; /* Slightly smaller logo on scroll */
+}
+
+.navbar__links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between the links */
+}
+
+.navbar__links li {
+    position: relative; /* For adding hover effects */
+}
+
+.navbar__links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Larger font size */
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar__links a:hover {
+    color: #e50914; /* Highlight color on hover */
+}
+
+/* Underline effect on hover */
+.navbar__links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #e50914;
+    transition: width 0.3s ease;
+}
+
+.navbar__links a:hover::after {
+    width: 100%; /* Full-width underline on hover */
+}
+
+/* Banner Section */
+.banner {
+    height: 37vh;
+    background-image: url('src/DSI\ Banner.png'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.banner__text {
+    background-color: rgba(0, 0, 0, 0.5); /* 50% opacity background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner__text h1 {
+    font-size: 48px;
+}
+
+.banner__text p {
+    font-size: 20px;
+}
+
+/* Legalese Content Section */
+.legalese {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.legalese__content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.legalese__content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.legalese__content h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.legalese__content p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer__links li {
+    margin: 5px 15px;
+}
+
+.footer__links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__links a:hover {
+    text-decoration: underline;
+}
