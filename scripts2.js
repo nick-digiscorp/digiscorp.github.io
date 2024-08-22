@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: 'Carlos C.',
                 role: 'Producer',
-                image: 'src/About/Team/CarlosC.jpg'
+                image: 'src/About/Team/CarlosC.JPG'
             },
         ],
         'development-team': [
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: 'Noah T.',
                 role: 'Audio Lead',
-                image: 'src/About/Team/NoahT.jpg'
+                image: 'src/About/Team/NoahT.JPG'
             },            
             {
                 name: 'Alexis T.',
@@ -174,12 +174,12 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: 'Ashley W.',
                 role: '2D Artist',
-                image: 'src/About/Team/Ashley_W.jpg'
+                image: 'src/About/Team/Ashley_W.JPG'
             },
             {
                 name: 'Eris G.',
                 role: '2D Artist',
-                image: 'src/About/Team/Eris.jpg'
+                image: 'src/About/Team/Eris.JPG'
             },
         ],
         '3d': [
