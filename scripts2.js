@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const teamDropdown = document.getElementById('team-dropdown');
     const profilesGrid = document.getElementById('profiles-grid');
     const heading = document.querySelector('.team-profiles h2');
+    const hamburger = document.querySelector('.hamburger');
+    const navbarLinks = document.querySelector('.navbar__links');
 
     const teams = {
         'creative-leaders': [
@@ -65,6 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 image: 'src/About/Team/PotaeT.jpg'
             },
             {
+                name: 'Mike M.',
+                role: 'Unity Developer',
+                image: 'src/About/Team/MikeM.jpg'
+            },
+            {
                 name: 'Alex B.',
                 role: 'Unity Developer',
                 image: 'src/About/Team/AlexB.jpg'
@@ -80,11 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: 'Glen C.',
                 role: 'Level Designer',
                 image: 'src/About/Team/GlenC.jpg'
-            },
-            {
-                name: 'Mike M.',
-                role: 'Level Designer',
-                image: 'src/About/Team/MikeM.jpg'
             },
             {
                 name: 'Daniel C.',
@@ -245,4 +247,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedTeam = localStorage.getItem('selectedTeam') || 'creative-leaders';
     teamDropdown.value = savedTeam;
     populateProfiles(savedTeam);
+
+    // Hamburger Menu Toggle
+    hamburger.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1024) {
+            navbarLinks.classList.remove('active');
+        }
+    });
 });
+

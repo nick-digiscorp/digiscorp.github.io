@@ -11,7 +11,6 @@ body {
     background-color: #f4f4f4;
 }
 
-
 /* Navbar Styles */
 .navbar {
     background-color: rgba(51, 51, 51, 0.9); /* Slightly transparent background */
@@ -33,9 +32,9 @@ body {
     margin: 0 auto;
 }
 
-.navbar.scrolled {
-    background-color: rgba(51, 51, 51, 1); /* Solid background on scroll */
-    padding: 10px 20px; /* Reduce padding on scroll for compact look */
+.navbar__logo {
+    display: flex;
+    align-items: center;
 }
 
 .navbar__logo img {
@@ -51,6 +50,7 @@ body {
     list-style: none;
     display: flex;
     gap: 20px; /* Space between the links */
+    margin-left: auto; /* Push the links to the right */
 }
 
 .navbar__links li {
@@ -83,6 +83,13 @@ body {
 
 .navbar__links a:hover::after {
     width: 100%; /* Full-width underline on hover */
+}
+
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px; /* Ensure space between logo and hamburger */
 }
 
 /* Banner Section */
@@ -233,11 +240,54 @@ body {
 .footer__links a:hover {
     text-decoration: underline;
 }
+
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar__links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.9);
+        text-align: center;
+    }
+
+    .navbar__links.active li {
+        margin: 15px 0;
+    }
+
+    .contact-blurb h2,
+    .contact-form h3,
+    .cta-social h3 {
+        font-size: 28px;
+    }
+
+    .contact-blurb p,
+    .contact-form form,
+    .social-links {
+        font-size: 16px;
+    }
+
+    .navbar__container {
+        flex-direction: row; /* Ensure logo and hamburger are on the same row */
+        justify-content: space-between; /* Space between logo and hamburger */
+    }
+}
+
 @media (max-width: 768px) {
     .navbar__container {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .navbar__links {
