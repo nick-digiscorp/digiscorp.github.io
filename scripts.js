@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.carouselSlide');
     const leftArrow = document.querySelector('.carousel__arrow--left');
     const rightArrow = document.querySelector('.carousel__arrow--right');
+    const hamburger = document.querySelector('.hamburger');
+    const navbar = document.querySelector('.navbar');
 
     let currentSlideIndex = 0;
     const slideInterval = 6000; // 6 seconds
@@ -13,12 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     function showSlide(index) {
         slides.forEach(slide => slide.classList.remove('active'));
         buttons.forEach(btn => btn.classList.remove('active'));
-        
+
         if (slides[index]) {
             slides[index].classList.add('active');
             if (buttons[index]) {
                 buttons[index].classList.add('active');
             }
+        }
+
+        // Remove any text labels indicating slide numbers
+        const slideLabel = document.querySelector('.slide-label');
+        if (slideLabel) {
+            slideLabel.remove(); // Remove slide label if it exists
         }
     }
 
@@ -133,14 +141,18 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Navbar scroll effect
-    document.addEventListener('DOMContentLoaded', () => {
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
     });
+
+    // Hamburger menu toggle (only if hamburger element exists)
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('open');
+        });
+    }
 });

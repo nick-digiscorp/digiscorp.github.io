@@ -11,18 +11,17 @@ body {
     background-color: #1a1a1a;
 }
 
-
 /* Navbar Styles */
 .navbar {
-    background-color: rgba(51, 51, 51, 0.9); /* Slightly transparent background */
+    background-color: rgba(51, 51, 51, 0.9);
     color: white;
     padding: 15px 20px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    transition: background-color 0.3s ease, padding 0.3s ease; /* Smooth transitions */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar__container {
@@ -33,43 +32,42 @@ body {
     margin: 0 auto;
 }
 
-.navbar.scrolled {
-    background-color: rgba(51, 51, 51, 1); /* Solid background on scroll */
-    padding: 10px 20px; /* Reduce padding on scroll for compact look */
-}
-
 .navbar__logo img {
-    height: 50px; /* Adjusted logo size */
+    height: 50px;
     transition: height 0.3s ease;
 }
 
 .navbar.scrolled .navbar__logo img {
-    height: 40px; /* Slightly smaller logo on scroll */
+    height: 40px;
+}
+
+/* Hide hamburger by default */
+.hamburger {
+    display: none;
 }
 
 .navbar__links {
     list-style: none;
     display: flex;
-    gap: 20px; /* Space between the links */
+    gap: 20px;
 }
 
 .navbar__links li {
-    position: relative; /* For adding hover effects */
+    position: relative;
 }
 
 .navbar__links a {
     color: white;
     text-decoration: none;
-    font-size: 18px; /* Larger font size */
+    font-size: 18px;
     padding: 8px 0;
     transition: color 0.3s ease;
 }
 
 .navbar__links a:hover {
-    color: #e50914; /* Highlight color on hover */
+    color: #e50914;
 }
 
-/* Underline effect on hover */
 .navbar__links a::after {
     content: '';
     position: absolute;
@@ -82,15 +80,15 @@ body {
 }
 
 .navbar__links a:hover::after {
-    width: 100%; /* Full-width underline on hover */
+    width: 100%;
 }
 
 /* Carousel Styles */
 .carousel {
     position: relative;
-    height: 95vh; /* 95% of the viewport height */
+    height: 95vh;
     overflow: hidden;
-    margin-top: 80px; /* Added margin to account for the fixed navbar */
+    margin-top: 80px;
 }
 
 .carouselSlide {
@@ -98,8 +96,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Full height of the carousel */
-    display: none; /* Hide all slides by default */
+    height: 100%;
+    display: none;
     align-items: center;
     justify-content: flex-start;
     color: white;
@@ -109,22 +107,23 @@ body {
 }
 
 .carouselSlide.active {
-    display: flex; /* Show the active slide */
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align the content to the bottom */
+    justify-content: flex-end;
 }
 
 .slide1 {
-    background-image: url('src/Index/cerulis.png'); /* Replace with your image path */
+    background-image: url('src/Index/cerulis.png');
 }
 
 .slide2 {
-    background-image: url('src/Index/tov.png'); /* Replace with your image path */
+    background-image: url('src/Index/tov.png');
 }
 
 .slide3 {
-    background-image: url('src/Index/aevorum.png'); /* Replace with your image path */
+    background-image: url('src/Index/aevorum.png');
 }
+
 /* Arrow Styles */
 .carousel__arrow {
     position: absolute;
@@ -150,17 +149,16 @@ body {
     right: 20px;
 }
 
-
 .hero__content {
     width: 100%;
     padding: 20px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%); /* Gradient background */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
     color: white;
-    text-align: left; /* Align text to the left */
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align content to the bottom left */
-    justify-content: flex-end; /* Align text to the bottom */
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
 .hero__content h1 {
@@ -175,7 +173,7 @@ body {
 
 .hero__buttons {
     display: flex;
-    gap: 10px; /* Space between the buttons */
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -192,7 +190,7 @@ body {
 }
 
 .hero__btn:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Slight background color on hover */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Games Showcase Section */
@@ -269,7 +267,7 @@ body {
 }
 
 .social__link:hover {
-    color: #e50914; /* Change to your brand color */
+    color: #e50914;
 }
 
 .community__cta {
@@ -295,30 +293,30 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
-    display: none; /* Hidden by default */
+    display: none;
 }
 
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     z-index: 1000;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.5); /* Centered and scaled down initially */
+    transform: translate(-50%, -50%) scale(0.5);
     background-color: #333;
     border: 1px solid #888;
     width: 80%;
-    max-width: 600px; /* Ensure it stays within the card */
-    height: auto; /* Auto height to fit the content */
+    max-width: 600px;
+    height: auto;
     border-radius: 10px;
     color: white;
-    overflow: hidden; /* Ensures the video fits perfectly */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition for both scale and opacity */
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .modal__video {
     width: 100%;
-    height: 300px; /* Adjust based on your desired video size */
+    height: 300px;
 }
 
 .modal__gradient {
@@ -326,7 +324,7 @@ body {
     width: 100%;
     height: 100px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
-    margin-top: -100px; /* Overlap with the video */
+    margin-top: -100px;
 }
 
 .modal__details {
@@ -420,23 +418,86 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar__links {
-        flex-direction: column;
-        align-items: center;
+/* Responsive Design for Desktop/Laptop Screens */
+@media (max-width: 2560px) {
+    .hero__content h1 {
+        font-size: 56px;
     }
+    .hero__content p {
+        font-size: 24px;
+    }
+}
 
+@media (max-width: 1920px) {
+    .hero__content h1 {
+        font-size: 48px;
+    }
+    .hero__content p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .hero__content h1 {
+        font-size: 42px;
+    }
+    .hero__content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .hero__content h1 {
+        font-size: 40px;
+    }
+    .hero__content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .hero__content h1 {
+        font-size: 38px;
+    }
+    .hero__content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1366px) {
     .hero__content h1 {
         font-size: 36px;
     }
+    .hero__content p {
+        font-size: 16px;
+    }
+}
 
+/* Responsive Design for Tablet Screens */
+@media (max-width: 1280px) {
+    .hero__content h1 {
+        font-size: 34px;
+    }
+    .hero__content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero__content h1 {
+        font-size: 32px;
+    }
     .hero__content p {
         font-size: 16px;
     }
 
+    .games__grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .game__card {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 
@@ -451,13 +512,42 @@ body {
     .modal {
         width: 90%;
     }
-}
 
-@media (max-width: 480px) {
-    .hero__content h1 {
-        font-size: 24px;
+    /* Show hamburger and hide links */
+    .hamburger {
+        display: block;
+        cursor: pointer;
     }
 
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar.open .navbar__links {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+    }
+
+    .navbar__links a {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+
+    .navbar__links a:hover {
+        background-color: #444;
+    }
+}
+
+/* Responsive Design for Smartphone Screens */
+@media (max-width: 720px) {
+    .hero__content h1 {
+        font-size: 28px;
+    }
     .hero__content p {
         font-size: 14px;
     }
@@ -467,9 +557,52 @@ body {
         padding: 8px 16px;
     }
 
-    .pagination__btn {
-        padding: 8px 10px;
-        margin: 0 5px;
-        font-size: 14px;
+    .game__card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 414px) {
+    .hero__content h1 {
+        font-size: 24px;
+    }
+    .hero__content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero__content h1 {
+        font-size: 22px;
+    }
+    .hero__content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero__content h1 {
+        font-size: 20px;
+    }
+    .hero__content p {
+        font-size: 10px;
+    }
+
+    .game__card {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel {
+        height: 50vh;
+    }
+
+    .modal__video {
+        height: 150px;
+    }
+
+    .modal {
+        width: 95%;
     }
 }

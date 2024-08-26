@@ -5,45 +5,22 @@
     <meta name="author" content="Digital Scorpion Interactive">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
     
-    <!-- Hotjar Tracking Code for my site -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3310369,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-    <!-- WEBSITE TITLE & DESCRIPTION -->
     <title>Digital Scorpion Interactive</title>
     <meta name="description" content="Indie Game Development Studio">
     <meta name="keywords" content="game, gaming, videogame, developer, steam, studio, team">
 
-    <!-- OG meta tags that improve the look of your post on social media -->
-    <meta property="og:site_name" content="Digital Scorpion Interactive" /><!--website name-->
-    <meta property="og:site" content="https://www.digitalscorpioninteractive.com" /> <!--website link-->
-    <meta property="og:title" content=""/> <!--Post title-->
-    <meta property="og:description" content="" /> <!--Post description-->
-    <meta property="og:image" content="" /><!-- Image link (jpg only)-->
-    <meta property="og:url" content="" /> <!--where do you want your post to link to-->
-    <meta property="og:type" content="article" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/favicon" href="src/favicon.jpg"/>
-    <title>Digital Scorpion Interactive</title>
-    
     <!-- External CSS for font and icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Internal CSS Link -->
     <link rel="stylesheet" href="styles.css">
-    
+
+    <!-- Preload Key Images -->
+    <link rel="preload" as="image" href="src/Index/cerulis.webp">
+    <link rel="preload" as="image" href="src/Index/tov.webp">
+    <link rel="preload" as="image" href="src/Index/aevorum.webp">
 </head>
 <body>
-
     <div id="app">
         <!-- Navigation Bar -->
         <nav class="navbar">
@@ -59,6 +36,10 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <!-- Hamburger Menu Icon -->
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </nav>
 
@@ -77,6 +58,7 @@
                         <a href="https://store.steampowered.com/app/2366690/Hit_N_Bit/" class="hero__btn">Wishlist Now</a>
                     </div>
                 </div>
+                <img data-src="src/Index/cerulis.webp" class="lazyload carousel-image">
             </div>
         
             <!-- Slide 2 -->
@@ -89,6 +71,7 @@
                         <a href="https://store.steampowered.com/app/3059570/Tales_of_Valoris_Swallows_Defenders/" class="hero__btn">Wishlist Now</a>
                     </div>
                 </div>
+                <img data-src="src/Index/tov.webp" class="lazyload carousel-image">
             </div>
         
             <!-- Slide 3 -->
@@ -100,12 +83,12 @@
                         <a href="https://discord.gg/jtVEun2wSU" class="hero__btn">Join our Discord</a>
                     </div>
                 </div>
+                <img data-src="src/Index/aevorum.webp" class="lazyload carousel-image">
             </div>
         
             <!-- Right Arrow -->
             <div class="carousel__arrow carousel__arrow--right">&#10095;</div>
         </section>
-        
 
         <!-- Games Showcase Section -->
         <section id="games" class="games">
@@ -113,15 +96,15 @@
             <div class="games__grid">
                 <!-- Game Card 1 -->
                 <div class="game__card" data-modal="modal1">
-                    <img src="src/Index/hnb_600_900.jpg" alt="Game 1">
+                    <img src="src/Index/hnb_600_900.webp" alt="Game 1">
                 </div>
                 <!-- Game Card 2 -->
                 <div class="game__card" data-modal="modal2">
-                    <img src="src/Index/ToV_600x900.jpg" alt="Game 2">
+                    <img src="src/Index/ToV_600x900.webp" alt="Game 2">
                 </div>
                 <!-- Game Card 3 -->
                 <div class="game__card" data-modal="modal3">
-                    <img src="src/Index/Coming Soon.png" alt="Game 3">
+                    <img src="src/Index/Coming Soon.webp" alt="Game 3">
                 </div>
             </div>
         </section>
@@ -154,7 +137,7 @@
                 <div class="modal__gradient"></div>
                 <div class="modal__details">
                     <h3>Hit N' Bit</h3>
-                    <p>Hit N’ Bit is a dark fantasy Metroidvania platformer. Embark on two wildy different journeys where you will fight monsters, explore a story-rich world, and encounter challenging puzzles. Do you have what it takes to defeat evil and change your destiny?</p>
+                    <p>Hit N’ Bit is a dark fantasy Metroidvania platformer. Embark on two wildly different journeys where you will fight monsters, explore a story-rich world, and encounter challenging puzzles. Do you have what it takes to defeat evil and change your destiny?</p>
                     <div class="modal__buttons">
                         <a href="https://store.steampowered.com/app/2366690/Hit_N_Bit/" class="btn">Wishlist Now</a>
                         <a href="https://store.steampowered.com/app/2997590/Hit_N_Bit_Demo/" class="btn">Play the Demo</a>
@@ -162,7 +145,7 @@
                     </div>
                     <br/>
                     <h3>About Hit N' Bit</h3>
-                    <p>Hit N’ Bit is a 2.5D action-adventure metroidvania game that also holds a narratively-rich world. As Hitendra, you’ll encounter a plethora of non-player characters each with their own unique personalities. Talking to these people, even for a brief moment, will reveal insight about the world of Valoris. Hitendra uses this knowledge and her athletic ability to reach new locations to explore hidden areas and complete quests. Fight back those who threaten Hitendra and her city’s safety with her marital prowess.</p>
+                    <p>Hit N’ Bit is a 2.5D action-adventure metroidvania game that also holds a narratively-rich world. As Hitendra, you’ll encounter a plethora of non-player characters each with their own unique personalities. Talking to these people, even for a brief moment, will reveal insight about the world of Valoris. Hitendra uses this knowledge and her athletic ability to reach new locations to explore hidden areas and complete quests. Fight back those who threaten Hitendra and her city’s safety with her martial prowess.</p>
                     <br/>
                     <h3>The Story of Cerulis</h3>
                     <p>The land of Valoris is one filled with magic and danger. Cerulis is the shining capital in the sky where many people call home. In this adventure you play as Hitendra, a warrior princess, as she prepares to set out on a journey to find her missing brother, Thybit. Explore the Cerulis Town Square in search of clues as well as gather the tools and supplies to make the journey as safe as possible. During your time preparing for adventure, you’ll also be assisting citizens and addressing their troubles. Dastardly figures and monsters run amok in the town square and it’s up to Hitendra’s amazing skills to bring back peace and justice to her home! </p>
@@ -202,23 +185,6 @@
             </div>
         </div>
 
-        <!-- Modal for Game 3 
-        <div id="modal3" class="modal">
-            <div class="modal__content">
-                <span class="modal__close">&times;</span>
-                <iframe class="modal__video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-                <div class="modal__gradient"></div>
-                <div class="modal__details">
-                    <h3>Game Title 3</h3>
-                    <p>A dark and gripping tale of survival and intrigue.</p>
-                    <div class="modal__buttons">
-                        <a href="#" class="btn">Wishlist Now</a>
-                        <a href="#" class="btn">Join Our Discord</a>
-                    </div>
-                </div>
-            </div>
-        </div>
--->
         <!-- Footer -->
         <footer class="footer">
             <div class="footer__content">
@@ -233,6 +199,5 @@
 
     <!-- Internal JavaScript Link -->
     <script src="scripts.js"></script>
-
 </body>
 </html>
