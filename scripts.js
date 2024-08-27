@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.carouselSlide');
     const leftArrow = document.querySelector('.carousel__arrow--left');
     const rightArrow = document.querySelector('.carousel__arrow--right');
-    const hamburger = document.querySelector('.hamburger');
-    const navbar = document.querySelector('.navbar');
 
     let currentSlideIndex = 0;
     const slideInterval = 6000; // 6 seconds
@@ -21,12 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (buttons[index]) {
                 buttons[index].classList.add('active');
             }
-        }
-
-        // Remove any text labels indicating slide numbers
-        const slideLabel = document.querySelector('.slide-label');
-        if (slideLabel) {
-            slideLabel.remove(); // Remove slide label if it exists
         }
     }
 
@@ -141,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -149,10 +142,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Hamburger menu toggle (only if hamburger element exists)
+    // Hamburger menu functionality for mobile
+    const hamburger = document.querySelector('.hamburger');
+    const navbarLinks = document.querySelector('.navbar__links');
+
     if (hamburger) {
         hamburger.addEventListener('click', () => {
-            navbar.classList.toggle('open');
+            navbarLinks.classList.toggle('active');
         });
     }
+
+    // Adjust modal size dynamically for mobile and tablet
+    function adjustModalSize() {
+        modals.forEach(modal => {
+            const video = modal.querySelector('video');
+            if (window.innerWidth <= 768) {
+                modal.style.width = '95%';
+                modal.style.maxHeight = '80vh';
+                if (video) {
+                    video.style.height = '200px';
+                }
+            } else {
+                modal.style.width = '80%';
+                modal.style.maxHeight = '90vh';
+                if (video) {
+                    video.style.height = '300px';
+                }
+            }
+        });
+    }
+
+    // Call adjustModalSize on load and on resize
+    adjustModalSize();
+    window.addEventListener('resize', adjustModalSize);
 });

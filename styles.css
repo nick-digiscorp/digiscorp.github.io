@@ -32,6 +32,11 @@ body {
     margin: 0 auto;
 }
 
+.navbar.scrolled {
+    background-color: rgba(51, 51, 51, 1);
+    padding: 10px 20px;
+}
+
 .navbar__logo img {
     height: 50px;
     transition: height 0.3s ease;
@@ -39,11 +44,6 @@ body {
 
 .navbar.scrolled .navbar__logo img {
     height: 40px;
-}
-
-/* Hide hamburger by default */
-.hamburger {
-    display: none;
 }
 
 .navbar__links {
@@ -81,6 +81,39 @@ body {
 
 .navbar__links a:hover::after {
     width: 100%;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger i {
+    color: white;
+    font-size: 24px;
+}
+
+.navbar__links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar__links.active li {
+    margin-bottom: 10px;
+}
+
+.navbar__links.active a {
+    font-size: 24px;
 }
 
 /* Carousel Styles */
@@ -308,15 +341,19 @@ body {
     width: 80%;
     max-width: 600px;
     height: auto;
+    max-height: 90vh; /* Allow modal to use 90% of the viewport height */
     border-radius: 10px;
     color: white;
-    overflow: hidden;
+    overflow-y: auto; /* Enable scrolling if content exceeds modal height */
+    overflow-x: hidden; /* Prevent horizontal overflow */
     transition: transform 0.3s ease, opacity 0.3s ease;
+    padding: 20px;
 }
 
 .modal__video {
     width: 100%;
     height: 300px;
+    max-height: 40vh; /* Adjust the video height on smaller screens */
 }
 
 .modal__gradient {
@@ -512,35 +549,6 @@ body {
     .modal {
         width: 90%;
     }
-
-    /* Show hamburger and hide links */
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .navbar__links {
-        display: none;
-    }
-
-    .navbar.open .navbar__links {
-        display: flex;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 200px;
-    }
-
-    .navbar__links a {
-        padding: 10px;
-        border-bottom: 1px solid #444;
-    }
-
-    .navbar__links a:hover {
-        background-color: #444;
-    }
 }
 
 /* Responsive Design for Smartphone Screens */
@@ -560,6 +568,18 @@ body {
     .game__card {
         width: 100%;
         height: auto;
+    }
+
+    .carousel {
+        height: 50vh;
+    }
+
+    .modal__video {
+        height: 150px;
+    }
+
+    .modal {
+        width: 95%;
     }
 }
 
@@ -604,5 +624,18 @@ body {
 
     .modal {
         width: 95%;
+    }
+}
+
+/* Additional Styles for Hamburger Menu */
+@media (max-width: 768px) {
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: flex;
     }
 }
