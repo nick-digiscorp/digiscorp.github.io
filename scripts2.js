@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 image: 'src/About/Team/JerryV.jpg'
             }
         ],
-        'prod': [
+   /*     'prod': [
             {
                 name: 'Carlos C.',
                 role: 'Producer',
                 image: 'src/About/Team/CarlosC.JPG'
             },
-        ],
+        ], */
         'development-team': [
             {
                 name: 'Hunter A.',
@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: 'Unity Developer',
                 image: 'src/About/Team/MikeM.jpg'
             },
-            {
+           /* {
                 name: 'Alex B.',
                 role: 'Unity Developer',
                 image: 'src/About/Team/AlexB.jpg'
-            },
+            }, */
         ],
         'level-design-team': [
             {
@@ -93,11 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: 'Level Designer',
                 image: 'src/About/Team/DanielC.jpg'
             },
-            {
+         /*   {
                 name: 'Daniel W.',
                 role: 'Level Designer',
                 image: 'src/About/Team/Daniel_Woodell.png'
-            },
+            }, */
         ],
         'qa': [
             {
@@ -151,6 +151,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: 'Community Manager',
                 image: 'src/About/Team/Armando_F.jpg'
             },
+            {
+                name: 'Hunter G.',
+                role: 'Marketing Lead',
+                image: 'src/About/Team/Armando_F.jpg'
+            },
         ],
         '2d': [
             {
@@ -190,11 +195,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: 'Lead 3D Artist',
                 image: 'src/About/Team/Taylor_Benoit.png'
             },
-            {
+            /*{
                 name: 'Megan F.',
                 role: '3D Artist',
                 image: 'src/About/Team/Megan_Foy.png'
-            },
+            },*/
             {
                 name: 'Frannie M.',
                 role: '3D Artist',
