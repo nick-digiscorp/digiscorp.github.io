@@ -304,7 +304,7 @@ body {
 }
 
 .community__cta {
-    background-color: #5539cc;
+    background-color: #e50914;
     color: white;
     padding: 15px 30px;
     border-radius: 5px;
@@ -314,7 +314,7 @@ body {
 }
 
 .community__cta:hover {
-    background-color: #917fe1;
+    background-color: #f6121d;
 }
 
 /* Modal Styles */
