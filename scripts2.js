@@ -214,11 +214,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: 'Megan F.',
                 role: '3D Artist',
                 image: 'src/About/Team/Megan_Foy.png'
-            },
-            {
-                name: 'Frannie M.',
-                role: '3D Artist',
-                image: 'src/About/Team/frannie.png'
             },*/
             {
                 name: 'Joe B.',
