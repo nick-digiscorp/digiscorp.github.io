@@ -56,21 +56,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: 'Unity Developer',
                 image: 'src/About/Team/Bryce_Knott.png'
             },
-            {
+        /*    {
                 name: 'Clara N.',
                 role: 'Unity Developer',
                 image: 'src/About/Team/Clara_N.jpg'
-            },
+            },*/
             {
                 name: 'Potae T.',
                 role: 'Unity Developer',
                 image: 'src/About/Team/PotaeT.jpg'
             },
-            {
+           /* {
                 name: 'Mike M.',
                 role: 'Unity Developer',
                 image: 'src/About/Team/MikeM.jpg'
-            },
+            },*/
            /* {
                 name: 'Alex B.',
                 role: 'Unity Developer',
@@ -93,6 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: 'Level Designer',
                 image: 'src/About/Team/DanielC.jpg'
             },
+            {
+                name: 'Jordan R.',
+                role: 'Level Designer',
+                image: 'src/About/Team/jordanR.jpg'
+            },
          /*   {
                 name: 'Daniel W.',
                 role: 'Level Designer',
@@ -107,14 +112,14 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         ],
         'audio': [
-            {
+            /*{
                 name: 'Noah T.',
                 role: 'Audio Lead',
                 image: 'src/About/Team/NoahT.JPG'
-            },            
+            },*/            
             {
                 name: 'Alexis T.',
-                role: 'Sound Designer',
+                role: 'Audio Lead',
                 image: 'src/About/Team/AlexisT.jpg'
             },
             {
@@ -124,14 +129,14 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         ],
         'narr': [
-            {
+            /*{
                 name: 'John B. IV',
                 role: 'Narrative Lead',
                 image: 'src/About/Team/John_BlackIV.png'
-            },            
+            },  */          
             {
                 name: 'Aidan W.',
-                role: 'Narrative Designer',
+                role: 'Narrative Lead',
                 image: 'src/About/Team/Aidan_Wong.png'
             },
             {
@@ -147,14 +152,24 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         'comm': [
             {
+                name: 'Hunter G.',
+                role: 'Marketing Lead',
+                image: 'src/About/Team/hunterG.png'
+            },
+            {
                 name: 'Armando F.',
-                role: 'Community Manager',
+                role: 'Data Analytics',
                 image: 'src/About/Team/Armando_F.jpg'
             },
             {
-                name: 'Hunter G.',
-                role: 'Marketing Lead',
-                image: 'src/About/Team/Armando_F.jpg'
+                name: 'Sarah H.',
+                role: 'Community Manager',
+                image: 'src/About/Team/sarahH.jpg'
+            },
+            {
+                name: 'Chloe L.',
+                role: 'Social Media Manager',
+                image: 'src/About/Team/chloeL.jpg'
             },
         ],
         '2d': [
@@ -163,21 +178,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: 'Lead 2D Artist',
                 image: 'src/About/Team/TylerC.png'
             },
-            {
+            /*{
                 name: 'Dani F.',
                 role: '2D Artist',
                 image: 'src/About/Team/Dani_Fields.png'
-            },
+            },*/
             {
                 name: 'Flipsy L.',
                 role: '2D Artist',
                 image: 'src/About/Team/Flipsy_Lucero.png'
             },
-            {
+           /* {
                 name: 'Tessa L.',
                 role: 'UI/UX Artist',
                 image: 'src/About/Team/Tessa_L.jpg'
-            },
+            },*/
             {
                 name: 'Ashley W.',
                 role: '2D Artist',
@@ -199,17 +214,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: 'Megan F.',
                 role: '3D Artist',
                 image: 'src/About/Team/Megan_Foy.png'
-            },*/
+            },
             {
                 name: 'Frannie M.',
                 role: '3D Artist',
                 image: 'src/About/Team/frannie.png'
-            },
+            },*/
             {
                 name: 'Joe B.',
                 role: '3D Artist',
                 image: 'src/About/Team/JoeB.jpg'
             },
+            {
+                name: 'Aresène P.',
+                role: '3D Artist',
+                image: 'src/About/Team/areseneP.png'
+            }
         ],
     };
 
