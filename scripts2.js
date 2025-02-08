@@ -13,23 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 image: 'src/About/Team/NickR.jpg'
             },
             {
-                name: 'Mike Slamon',
-                role: 'Chief Creative Officer',
-                image: 'src/About/Team/MikeS.jpg'
-            },
-            {
                 name: 'Joel Miller',
                 role: 'Chief Technology Officer',
                 image: 'src/About/Team/JoelM.jpg'
             },
             {
-                name: 'Nicholas McKinnis',
-                role: 'Chief Design Officer',
-                image: 'src/About/Team/NickM.jpg'
-            },
-            {
                 name: 'Jerry R. Vorhies',
-                role: 'Chief Production Officer',
+                role: 'Production Advisor',
                 image: 'src/About/Team/JerryV.jpg'
             }
         ],
@@ -42,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
         ], */
         'development-team': [
             {
-                name: 'Hunter A.',
+                name: 'Abraham E.',
                 role: 'Lead Developer',
-                image: 'src/About/Team/Hunter_Adelgren.png'
+                image: 'src/About/Team/Abraham_Elfenbaum.png'
             },
             {
                 name: 'Ellie M.',
@@ -56,37 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: 'Unity Developer',
                 image: 'src/About/Team/Bryce_Knott.png'
             },
-        /*    {
-                name: 'Clara N.',
-                role: 'Unity Developer',
-                image: 'src/About/Team/Clara_N.jpg'
-            },*/
-            {
-                name: 'Potae T.',
-                role: 'Unity Developer',
-                image: 'src/About/Team/PotaeT.jpg'
-            },
-           /* {
-                name: 'Mike M.',
-                role: 'Unity Developer',
-                image: 'src/About/Team/MikeM.jpg'
-            },*/
-           /* {
-                name: 'Alex B.',
-                role: 'Unity Developer',
-                image: 'src/About/Team/AlexB.jpg'
-            }, */
+
         ],
         'level-design-team': [
             {
                 name: 'Daniel K.',
                 role: 'Lead Designer',
                 image: 'src/About/Team/Daniel_Kitchen.png'
-            },
-            {
-                name: 'Glen C.',
-                role: 'Level Designer',
-                image: 'src/About/Team/GlenC.jpg'
             },
             {
                 name: 'Daniel C.',
@@ -98,25 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 role: 'Level Designer',
                 image: 'src/About/Team/jordanR.jpg'
             },
-         /*   {
-                name: 'Daniel W.',
-                role: 'Level Designer',
-                image: 'src/About/Team/Daniel_Woodell.png'
-            }, */
         ],
-        'qa': [
+    /*    'qa': [
             {
                 name: 'Abraham E.',
                 role: 'Quality Assurance Lead',
                 image: 'src/About/Team/Abraham_Elfenbaum.png'
             },
-        ],
-        'audio': [
-            /*{
-                name: 'Noah T.',
-                role: 'Audio Lead',
-                image: 'src/About/Team/NoahT.JPG'
-            },*/            
+        ],*/
+        'audio': [  
             {
                 name: 'Alexis T.',
                 role: 'Audio Lead',
@@ -128,28 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 image: 'src/About/Team/TravisM.jpg'
             },
         ],
-        'narr': [
-            /*{
-                name: 'John B. IV',
-                role: 'Narrative Lead',
-                image: 'src/About/Team/John_BlackIV.png'
-            },  */          
-            {
-                name: 'Aidan W.',
-                role: 'Narrative Lead',
-                image: 'src/About/Team/Aidan_Wong.png'
-            },
-            {
-                name: 'Dominic Z.',
-                role: 'Narrative Designer',
-                image: 'src/About/Team/Dominic_Zullo.png'
-            },
+       /* 'narr': [      
             {
                 name: 'Tiago V.',
                 role: 'Narrative Designer',
                 image: 'src/About/Team/Tiago_Rivera.png'
             },
-        ],
+        ],*/
         'comm': [
             {
                 name: 'Hunter G.',
@@ -173,51 +114,22 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         ],
         '2d': [
-            {
-                name: 'Tyler C.',
-                role: 'Lead 2D Artist',
-                image: 'src/About/Team/TylerC.png'
-            },
-            /*{
-                name: 'Dani F.',
-                role: '2D Artist',
-                image: 'src/About/Team/Dani_Fields.png'
-            },*/
+
             {
                 name: 'Flipsy L.',
                 role: '2D Artist',
                 image: 'src/About/Team/Flipsy_Lucero.png'
             },
-           /* {
-                name: 'Tessa L.',
-                role: 'UI/UX Artist',
-                image: 'src/About/Team/Tessa_L.jpg'
-            },*/
             {
                 name: 'Ashley W.',
                 role: '2D Artist',
                 image: 'src/About/Team/Ashley_W.JPG'
             },
-            {
-                name: 'Eris G.',
-                role: '2D Artist',
-                image: 'src/About/Team/Eris.JPG'
-            },
         ],
         '3d': [
             {
-                name: 'Taylor B.',
-                role: 'Lead 3D Artist',
-                image: 'src/About/Team/Taylor_Benoit.png'
-            },
-            /*{
-                name: 'Megan F.',
-                role: '3D Artist',
-                image: 'src/About/Team/Megan_Foy.png'
-            },*/
-            {
                 name: 'Joe B.',
-                role: '3D Artist',
+                role: '3D Art Lead',
                 image: 'src/About/Team/JoeB.jpg'
             },
             {
